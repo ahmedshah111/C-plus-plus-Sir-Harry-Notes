@@ -14,7 +14,7 @@ int main()
     float *p = new float(41.78);
     cout << "The value at address at p is: " << *p << endl;
 
-    int *arr = new int[3]; // ---> Allocating 3 Memory bloacks using [] these brackets.
+    int *arr = new int[3]; // ---> Allocating 3 Memory blocks using [] these brackets.
     arr[0] = 10;
     *(arr + 1) = 20;
     arr[2] = 30;
