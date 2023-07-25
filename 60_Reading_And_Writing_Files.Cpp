@@ -21,8 +21,8 @@ int main()
     string st2;
 
     // Opening Files Using Constructor and Writing to it:-
-    // ofstream out("Sample60a.txt"); // Writing Operation;
-    // out << st;
+    ofstream out("Sample60a.txt"); // Writing Operation;
+    out << st;
 
     // Opening Files Using Constructor and Reading to it:-
     ifstream in("Sample60b.txt"); // Reading Operation;
