@@ -86,5 +86,5 @@ int main()
 // Abstract Base Class:-
 // 1. An abstract class is a class that is designed to be specifically used as a base class. 
 // 2. An abstract class contains at least one pure virtual function. 
-// 3. You declare a pure virtual function by using a pure specifier ( = 0 ) 
+// 3. We can declare a pure virtual function by using a pure specifier ( = 0 ) 
 //    in the declaration of a virtual member function in the class declaration.

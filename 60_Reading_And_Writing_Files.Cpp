@@ -27,7 +27,7 @@ int main()
     // Opening Files Using Constructor and Reading to it:-
     ifstream in("Sample60b.txt"); // Reading Operation;
     // in >> st;
-    getline(in, st2);
+    getline(in, st2); // This Function is used to read a whole line.
     cout << st2;
     return 0;
 }
