@@ -25,7 +25,22 @@
         "typeinfo": "cpp",
         "28_More_on_friend_functions.C": "cpp",
         "string": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "list": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "string_view": "cpp",
+        "atomic": "cpp",
+        "iterator": "cpp",
+        "memory_resource": "cpp",
+        "optional": "cpp",
+        "fstream": "cpp",
+        "functional": "cpp",
+        "stdexcept": "cpp",
+        "system_error": "cpp",
+        "tuple": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }
