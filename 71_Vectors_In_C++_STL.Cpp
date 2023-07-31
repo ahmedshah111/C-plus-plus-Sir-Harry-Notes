@@ -1,79 +1,51 @@
-// #include <iostream>
-// #include <vector>
-// #include <string>
-
-// using namespace std;
-
-// template <class T>
-// void display(vector<T> &v) // Templatized Vector Function:-
-// {
-//     cout << "Displaying this Vector:-" << endl;
-//     for (int i = 0; i < v.size(); i++)
-//     {
-
-//         // cout << v[i] << " ";
-//         cout << v.at(i) << " ";
-//     }
-//     cout << endl;
-// }
-
-// int main()
-// {
-//     // Ways to Create a Vector:-
-//     vector<int> vector_1;     // Zero Length Integer Vector;
-//     // vector<char> vector_2(4); // 4-Element Character Vector;
-//     // vector_2.push_back('a');
-//     // vector<char> vector_3(vector_2); // 4-Element Character Vector from Vector 2;
-//     // vector<int> vector_4(6, 33);     // 6-Element Integer Vector of 3;
-//     // cout << "Size: " << vector_4.size() << endl;
-
-//     int element, size;
-//     cout << "How many Integers you want in the Vector: " << endl;
-//     cin >> size;
-//     for (int i = 0; i < size; i++)
-//     {
-//         cout << "Enter an Element to Add to this Vector: " << endl;
-//         cin >> element;
-//         vector_1.push_back(element); // ---> It Adds data to the Vector;
-//     }
-//     // vector_1.pop_back(); // ---> It removes last Element;
-//     // vector_1.emplace(vector_1.begin(), 10); // ---> It adds a new element as desired.
-
-//     // Creating an Iterator:-
-//     vector<int>::iterator iterator_1;
-//     iterator_1 = vector_1.begin();
-//     vector_1.insert(iterator_1 + 1, 10);
-//     // vector_1.insert(iterator_1 + 1, 10, 44);
-
-//     display(vector_1);
-//     return 0;
-// }
-
 #include <iostream>
 #include <vector>
+#include <string>
 
 using namespace std;
 
+template <class T>
+void display(vector<T> &v) // Templatized Vector Function:-
+{
+    cout << "Displaying this Vector:-" << endl;
+    for (int i = 0; i < v.size(); i++)
+    {
+
+        // cout << v[i] << " ";
+        cout << v.at(i) << " ";
+    }
+    cout << endl;
+}
+
 int main()
 {
-    vector<int> vec1, vec2;
-    vec1 = {11, 12, 13, 14, 15, 16, 17, 18, 19, 20};
-    // vec2 = {16, 17, 18, 19, 20};
-    vector<int>::iterator it;
-    cout << "Size before Resizing: " << vec1.size() << endl;
-    for (auto i = vec1.begin(); i != vec1.end(); i++)
+    // Ways to Create a Vector:-
+    vector<int> vector_1;     // Zero Length Integer Vector;
+    // vector<char> vector_2(4); // 4-Element Character Vector;
+    // vector_2.push_back('a');
+    // vector<char> vector_3(vector_2); // 4-Element Character Vector from Vector 2;
+    // vector<int> vector_4(6, 33);     // 6-Element Integer Vector of 3;
+    // cout << "Size: " << vector_4.size() << endl;
+
+    int element, size;
+    cout << "How many Integers you want in the Vector: " << endl;
+    cin >> size;
+    for (int i = 0; i < size; i++)
     {
-        cout << *i << " ";
+        cout << "Enter an Element to Add to this Vector: " << endl;
+        cin >> element;
+        vector_1.push_back(element); // ---> It Adds data to the Vector;
     }
-    vec1.resize(5);
-    vec1.shrink_to_fit();
-    cout << endl << "vec1.resize(5): " << vec1.size() << endl;
-    for (auto i = vec1.begin(); i != vec1.end(); i++)
-    {
-        cout << *i << " ";
-    }
-    cout << endl
-         << "Size after Resizing: " << vec1.size() << endl;
+    // vector_1.pop_back(); // ---> It removes last Element;
+    // vector_1.emplace(vector_1.begin(), 10); // ---> It adds a new element as desired.
+
+    // Creating an Iterator:-
+    vector<int>::iterator iterator_1;
+    iterator_1 = vector_1.begin();
+    vector_1.insert(iterator_1 + 1, 10);
+    // vector_1.insert(iterator_1 + 1, 10, 44);
+
+    display(vector_1);
     return 0;
 }
 
