@@ -15,7 +15,7 @@ public:
         title = s;
         rating = r;
     }
-    virtual void display() = 0; // Do - Nothing Function ---> Pure Virtual Function;
+    virtual void display() = 0; // Do - Nothing Function ---> Pure Virtual Function ---> Interface;
 };
 
 class CWHVideo : public CWH
